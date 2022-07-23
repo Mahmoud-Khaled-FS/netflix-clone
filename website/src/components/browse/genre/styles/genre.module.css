@@ -1,0 +1,144 @@
+.page_genre {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  will-change: scroll-position;
+}
+.genre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  will-change: scroll-position;
+  box-sizing: border-box;
+}
+.genre_container {
+  opacity: 1;
+  z-index: 2;
+  transform: none;
+}
+.container {
+  position: relative;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  align-self: center;
+  margin: 2rem auto;
+  z-index: 2;
+  padding: 0px;
+  width: 80vw;
+  min-height: 100vh;
+  max-width: 80vw;
+  background-color: rgb(24, 24, 24);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 0px 6%;
+  text-align: center;
+  color: white;
+}
+.box_items {
+  margin: 3vw 0;
+  padding: 0;
+}
+.box_container {
+  padding: 0 0 50px;
+  z-index: 0;
+  overflow: hidden;
+}
+.box_items:hover .explore_icon {
+  display: inline-block;
+}
+.item_container {
+  transition: transform 0.54s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+.item_container .items {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 4%;
+  justify-content: space-evenly;
+}
+.card_box {
+  padding-bottom: 3rem;
+  position: relative;
+  flex-basis: 24%;
+  padding-right: 1.33%;
+}
+.card_box_preview {
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 28.125% 0;
+}
+.card_box_preview img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.under_image {
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+  background-color: #222;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+.header_title {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.more_container {
+  display: flex;
+
+  justify-content: center;
+}
+.more_container button {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1.2rem;
+  background-color: #161616;
+  cursor: pointer;
+  /* display: block; */
+}
+.more_container button svg {
+  /* width: 50%; */
+  margin: 0;
+  width: 0.6rem;
+  cursor: inherit;
+  color: white;
+  fill: white;
+  transform: rotate(90deg);
+}
+.divider {
+  border-bottom: 2px #333 solid;
+  padding-bottom: 1rem;
+  margin: 0 4%;
+}
+@media (max-width: 880px) {
+  .card_box {
+    flex-basis: 49%;
+    padding-right: 2%;
+  }
+}

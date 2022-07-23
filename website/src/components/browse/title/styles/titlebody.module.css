@@ -1,0 +1,378 @@
+.title_body {
+  background-color: #181818;
+  position: relative;
+}
+.title_body_container {
+  padding: 0 3em;
+}
+.preview_model {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 2em;
+  position: relative;
+  width: 100%;
+  background-color: #181818;
+  display: grid;
+}
+.ptitle {
+  margin: 0.8em 0;
+}
+.ptitle_info {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.line {
+  max-width: 100%;
+  margin: 0.25em 0.5em 0.25em 0;
+}
+.line .match {
+  white-space: unset;
+  color: #46d369;
+  font-weight: 700;
+  display: inline-block;
+  white-space: nowrap;
+}
+.second_line > * {
+  margin-right: 0.5em;
+}
+.feature {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0 0.5em;
+  font-size: 0.7em;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.maturity_rating {
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  padding: 0 0.4em;
+  unicode-bidi: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.message_content {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.description {
+  margin-bottom: 0.5em;
+  line-height: 24px;
+  font-size: 14px;
+}
+.tags_links {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0.5em;
+  margin-left: 0;
+  word-break: break-word;
+}
+.tags_links_title {
+  color: #777;
+}
+.tag_item {
+  color: #ddd;
+  margin: 0;
+  cursor: pointer;
+  outline-color: #fff;
+}
+.tag_item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.tag_item:hover {
+  text-decoration: underline;
+}
+
+/* Episodes List  */
+.episodes_list {
+  background-color: #181818;
+  padding: 1em 0;
+  padding-bottom: 0;
+}
+.episodes_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.episodes_header_title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+.episodes_header_season {
+  font-size: 18px;
+}
+.episodes_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.episode_item {
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+  padding: 1em;
+  border-radius: 0.25em;
+  min-height: 10em;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.episode_item.current {
+  background-color: #333;
+}
+.episode_number {
+  font-size: 1.5em;
+  color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 7%;
+}
+.episode_image {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 18%;
+  border-radius: 4px;
+}
+.ep_img img {
+  max-width: 100%;
+  display: block;
+}
+.button_svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(195deg, rgba(24, 24, 24, 0.7) 0, rgba(24, 24, 24, 0.5) 10%, transparent 25%);
+}
+.button_svg svg {
+  width: 3em;
+  height: 3em;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  border-radius: 2em;
+  opacity: 0;
+  background-color: rgba(30, 30, 20, 0.5);
+  transition: opacity 0.2s ease-in;
+}
+.episode_item:hover .button_svg svg {
+  opacity: 1;
+}
+.episode_content {
+  min-height: 100%;
+  flex: 0 0 70%;
+  font-size: 1em;
+}
+.episode_content_header {
+  padding: 1em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.episode_content_header span {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.episode_content p {
+  padding: 0 1em 1em;
+  margin: 0;
+  color: #d2d2d2;
+}
+/* More Contnet */
+.more_content {
+  background-color: #181818;
+}
+.more_content_header {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+.more_content_container {
+  max-height: 65em;
+  overflow: hidden;
+}
+.more_content_grid {
+  display: grid;
+  grid-gap: 1em;
+  align-items: stretch;
+  -ms-grid-column-align: stretch;
+  justify-items: stretch;
+}
+.more_content_card {
+  margin: 0.1em;
+  height: 100%;
+  border-radius: 0.25em;
+  min-height: 22em;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.card_image {
+  position: relative;
+  overflow: hidden;
+}
+.more_content_card:hover .button_svg svg {
+  opacity: 1;
+}
+.card_image img {
+  width: 100%;
+  display: block;
+}
+.card_image span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  white-space: nowrap;
+}
+.card_content {
+  background-color: #2f2f2f;
+  min-height: 100%;
+}
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.card_matced {
+  padding: 0;
+  min-width: unset;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.card_matced .card_first_line {
+  max-width: 100%;
+  margin: 0.25em 0.5em 0.25em 0;
+  white-space: unset;
+  color: #46d369;
+  font-weight: 700;
+  display: inline-block;
+  white-space: nowrap;
+}
+.card_matced .card_second_line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card_second_line span {
+  margin-right: 0.5em;
+}
+.card_second_line span.card_year {
+  font-weight: bold;
+}
+
+.card_description {
+  padding: 0 1em 1em;
+  margin: 0;
+  color: #d2d2d2;
+  font-size: 13;
+  line-height: 20px;
+}
+.more_content_button {
+  margin-top: -6em;
+  background-image: linear-gradient(
+    to top,
+    #181818 0,
+    rgba(24, 24, 24, 0.7) 20%,
+    rgba(24, 24, 24, 0.4) 30%,
+    transparent 50%
+  );
+  position: relative;
+  width: 100%;
+  height: 6em;
+  border-bottom: 2px solid #404040;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+}
+.more_content_button_active {
+  margin-top: auto;
+}
+.more_content_button button {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  fill: white;
+  transform: translateY(50%);
+}
+.more_content_button button svg {
+  transform: rotate(90deg);
+}
+.about_container {
+  background-color: #181818;
+  padding-bottom: 2em;
+}
+.small_card {
+  min-height: unset !important;
+}
+.small_card .card_content {
+  background-color: unset;
+}
+.small_card_contnet {
+  padding: 1em;
+}
+.small_card_contnet span {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+}
+/* Media  */
+@media (min-aspect-ratio: 3/9) {
+  .episode_item {
+    min-height: 10em;
+  }
+  .more_content_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .more_content_card {
+    flex: 0 0 47%;
+    min-height: 22em;
+  }
+}
+@media (min-aspect-ratio: 7/9) {
+  .episode_item {
+    min-height: 8em;
+  }
+  .more_content_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .more_content_card {
+    flex: 0 0 31%;
+    min-height: 22em;
+  }
+}
+
+.title_name {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+}

@@ -1,0 +1,146 @@
+.center {
+  background-color: white;
+  padding-bottom: 95px;
+}
+.step {
+  padding: 20px 32px 60px;
+  margin: 0 auto 50px;
+  max-width: 978px;
+}
+.form {
+  padding: 10px;
+}
+.header {
+  max-width: 340px;
+  margin: 0 auto;
+}
+.textCenter {
+  text-align: center;
+}
+.image {
+  display: inline-block;
+}
+.image .imageContainer {
+  margin: 100px 0 20px;
+  width: 260px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 90px;
+  background-size: 260px;
+}
+:static('.inline') {
+  display: inline-block;
+}
+.stepNumber {
+  font-size: 13px;
+}
+.stepNumber b {
+  font-weight: 700;
+}
+.title {
+  font-size: 32px;
+  margin: 0 0 0.4em;
+  font-weight: bold;
+}
+.body {
+  margin: 0;
+  font-size: 18px;
+  display: inline-block;
+  /* max-width: 300px; */
+  margin-bottom: 10px;
+}
+.button {
+  max-width: 340px;
+  margin: 24px auto;
+  text-align: center;
+  /* display: inline-block; */
+}
+.button button {
+  min-height: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 0.75rem 25.3px;
+  min-width: 110px;
+  width: 100%;
+  color: white;
+  background-color: #e50914;
+  display: inline-block;
+  user-select: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+.button button:hover {
+  background-color: #f6121d;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid #8c8c8c;
+  border-radius: 0;
+  padding-top: 5px;
+}
+.input input {
+  color: #000;
+  border-radius: 0px;
+}
+
+.input:focus-within {
+  background-color: #fff;
+  border-color: #0071ed;
+}
+.input.errorInput {
+  border-color: #b92d2b;
+}
+.input.errorInput + p {
+  color: #b92d2b !important;
+}
+.input.valid {
+  border-color: #5fa53f;
+}
+
+.paymentButton {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.paymentButton button {
+  cursor: pointer;
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.paymentButton button .content {
+  color: #333;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 10px;
+}
+.paymentButton button .content img {
+  /* margin-top: 4px; */
+  margin-left: 6px;
+  width: auto;
+  height: 25px;
+}
+.paymentButton button span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+}
+.paymentButton button span img {
+  width: 19px;
+  height: 19px;
+}

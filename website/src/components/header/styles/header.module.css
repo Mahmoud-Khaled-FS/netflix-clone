@@ -1,0 +1,93 @@
+/* .header {
+} */
+.hasImage {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.backdrop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.322);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.backdrop + div {
+  position: relative;
+  z-index: 10;
+}
+.container {
+  display: flex;
+  margin: 0 56px;
+  padding: 18px 0;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.smallContainer {
+  height: 64px;
+}
+.largeContainer {
+  height: 90px;
+}
+.container a {
+  display: flex;
+}
+.logo {
+  margin-right: 40px;
+}
+.smallLogo {
+  height: 32px;
+  width: 108px;
+}
+.largeLogo {
+  height: 45px;
+  width: 167px;
+  margin-left: 3%;
+  margin-top: 10px;
+}
+.buttonLink {
+  display: block;
+  background-color: #e50719;
+  width: 84px;
+  height: fit-content;
+  color: white;
+  border: 0;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 8px 17px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buttonLink:hover {
+  background-color: #f40612;
+}
+
+@media (min-width: 1000) {
+  .container {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1449) {
+  .logo {
+    height: 45px;
+    width: 167px;
+  }
+}
+.link {
+  color: #333;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 90px;
+  background-color: transparent;
+  white-space: noWrap;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}

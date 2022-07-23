@@ -1,0 +1,158 @@
+.planeHeader {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.planeHeaderContainer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+.planeHeaderContainer label {
+  width: calc(100% / 3);
+  padding: 12px 0;
+  flex: 1 1 auto;
+  position: relative;
+}
+.planeHeaderContainer label span {
+  z-index: 10;
+  width: 120px;
+  height: 120px;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.7;
+  border-radius: 2px;
+  font-size: 17px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+}
+.planeHeaderContainer label span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  border-top-color: #e50914;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-width: 0;
+}
+.planeHeaderContainer label.selectedLabel span {
+  opacity: 1;
+}
+.planeHeaderContainer label.selectedLabel span::after {
+  border-width: 10px;
+  /* opacity: 1; */
+}
+
+.planeHeaderContainer label input {
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+  appearance: none;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.table {
+  border-collapse: collapse;
+  padding-bottom: 10px;
+  width: 100%;
+  display: block;
+  /* display: flex;
+  align-items: flex-start; */
+}
+.table tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.table tr {
+  border-bottom: 1px solid #ccc;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+.table tr:last-child {
+  border-bottom: none;
+}
+.table tr td.cells {
+  color: #737373;
+  fill: #737373;
+  font-weight: 700;
+  text-align: center;
+  width: calc(60% / 3);
+  padding: 12px 16px;
+}
+.table tr td.tableTitle {
+  color: #333;
+  fill: #333;
+  flex: 0 0 auto;
+  text-align: left;
+  padding: 12px 16px;
+  width: 40%;
+}
+.small small {
+  color: #737373;
+  font-size: 13px;
+  display: block;
+  padding: 0 150px 0 16px;
+}
+.small:last-of-type small {
+  margin-top: 10px;
+}
+
+@media (max-width: 950px) {
+  .planeHeaderContainer label span {
+    width: 90px;
+    height: 90px;
+  }
+  .planeHeaderContainer label input {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .planeHeaderContainer {
+    width: 100%;
+  }
+  .planeHeaderContainer label {
+    margin-left: 10px;
+  }
+  .planeHeaderContainer label span {
+    width: 100%;
+    height: 75px;
+  }
+  .planeHeaderContainer label input {
+    width: 100%;
+    height: 75px;
+  }
+  .table tr td.cells {
+    width: calc(100% / 3);
+  }
+  .table tr td.tableTitle {
+    text-align: center;
+    width: 100%;
+  }
+  .table tr {
+    min-height: 37px;
+    flex-wrap: wrap;
+  }
+  .small small {
+    padding: 0 16px;
+  }
+}
+.selectedCell {
+  color: #e50914 !important;
+  fill: #e50914 !important;
+}
