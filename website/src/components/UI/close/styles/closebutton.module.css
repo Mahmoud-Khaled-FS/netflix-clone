@@ -1,0 +1,39 @@
+.close_button {
+  align-items: center;
+  appearance: none;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  /* padding: 0.8rem; */
+  user-select: none;
+  will-change: background-color, color;
+  word-break: break-word;
+  white-space: nowrap;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 1;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+.close_button div {
+  height: 2.3rem;
+  width: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close_button svg {
+  height: 100%;
+  width: 100%;
+  color: white;
+  fill: white;
+}
+.close_button,
+.close_button:hover,
+.close_button:not(:disabled):hover {
+  background-color: rgb(24, 24, 24);
+}
